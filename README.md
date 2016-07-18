@@ -28,5 +28,9 @@ Run `npm test`.
 Run `npm run perf`.
 
 ## Author
-https://nicolasforgerit.com/projects/fifo-queue
-Nicolas Forgerit <hello@nicolasforgerit.com>
+Nicolas Forgerit
+
+<hello@nicolasforgerit.com>
+
+## See also
+https://nicolasforgerit.com/projects/abstract-queue
