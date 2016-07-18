@@ -17,6 +17,7 @@
   "author": "Nicolas Forgerit <hello@nicolasforgerit.com>",
   "license": "ISC",
   "dependencies": {
+    "abstract-queue": "0.1.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
