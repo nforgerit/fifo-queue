@@ -1,4 +1,4 @@
-FIFO-Queue
+#FIFO-Queue
 
 FIFO (First In First Out) Queues are one of the basic data structures in Software Engineering.
 They come in handy for many different use cases, e.g. Job Queuing where
@@ -10,21 +10,23 @@ updated items to remote tiers.
 This package is abstract and can be used as core data structure of the afore-
 mentioned use cases. It aims for correctness, performance and reusability.
 
-# Usage
+## Usage
     npm i --save fifo-queue
     const queue = require('fifo-queue');
     //@TODO: Add basic usage
 
-# More examples
+## More examples
 // @TODO: Add more examples
 - bulk set and get
 - filter w/ simple obj
 - filter w/ $lt/$gt operator
 
-# Testing
+## Testing
+Run `npm test`.
 
-# Performance
+## Performance
+Run `npm run perf`.
 
-# Author
+## Author
 https://nicolasforgerit.com/projects/fifo-queue
 Nicolas Forgerit <hello@nicolasforgerit.com>
