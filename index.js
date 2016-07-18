@@ -108,7 +108,6 @@ class FifoQueue {
                     let filterOperand  = filterVal[filterOperator];
                     let itemOperand    = item[filterKey];
 
-                    // @TODO: store the info about operators somewhere else
                     if (filterOperator === '$gt') {
                         item.remove = itemOperand > filterOperand;
                     } else if (filterOperator === '$lt') {
@@ -119,7 +118,6 @@ class FifoQueue {
             });
         });
 
-        // @TODO: check if there's a better way
         let index = this.itemSet.length - 1;
         while (index >= 0) {
             if (this.itemSet[index].remove) {
@@ -149,20 +147,5 @@ class FifoQueue {
         return `<-${out}<-`;
     }
 }
-//
-// let jobQueue = new FifoQueue;
-// let jobs = [
-//     {id: 1, title: 'do something fast',     retry: 0,   prio: 100   },
-//     {id: 2, title: 'i fail sometimes',      retry: 2,   prio: 23    },
-//     {id: 3, title: 'i can also fail',       retry: 1,   prio: 1010  },
-//     {id: 4, title: 'i fail often',          retry: 99,  prio: 87    },
-//     {id: 5, title: 'i fail therefore i am', retry: 999, prio: 9892  }
-// ];
-//
-// jobQueue.setItems(jobs);
-// console.log(jobQueue)
-//
-// jobQueue.findAndRemove({prio:{$lt: 1000}});
-// console.log(jobQueue)
 
 module.exports = FifoQueue;
