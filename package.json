@@ -1,11 +1,12 @@
 {
-  "name": "fifo-queue",
+  "name": "fifoqueue",
   "version": "0.1.0",
   "description": "Frst In First Out-Queue to be used for Job Queues, Flash Messagers, Multi-tier Collection Sync, etc.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/unit",
-    "perf": "echo ' *** No performance tests found ***' "
+    "perf": "echo ' *** No performance tests found ***' ",
+    "build": "./node_modules/.bin/babel index.js --minified --compact --no-comments -o dist/fifoqueue.min.js"
   },
   "keywords": [
     "fifo",
@@ -20,6 +21,8 @@
     "abstract-queue": "0.1.0"
   },
   "devDependencies": {
+    "babel-cli": "6.10.1",
+    "babel-preset-es2015": "6.9.0",
     "chai": "3.5.0",
     "mocha": "2.5.3"
   }
