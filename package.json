@@ -1,6 +1,6 @@
 {
   "name": "fifoqueue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Frst In First Out-Queue to be used for Job Queues, Flash Messagers, Multi-tier Collection Sync, etc.",
   "main": "./dist/fifoqueue.min.js",
   "scripts": {
