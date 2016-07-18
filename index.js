@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 /**
  * JobQueue using FIFO strategy.
  */
