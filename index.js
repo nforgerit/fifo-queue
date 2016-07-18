@@ -82,14 +82,7 @@ class FifoQueue {
             return;
         }
 
-        // console.log(_dupl)
-        // console.log(this.getItems())
-
-        // this is wrong!! don't alter an array
-        // that you're iterating over...
         this.getItems().forEach( (item, itemKey) =>  {
-            // let removeItem = false;
-
             Object.keys(filter).forEach( (filterKey) => {
                 if (!item[filterKey]) {
                     return;
