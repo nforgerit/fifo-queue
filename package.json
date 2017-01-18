@@ -2,7 +2,7 @@
   "name": "fifoqueue",
   "version": "0.1.1",
   "description": "Frst In First Out-Queue to be used for Job Queues, Flash Messagers, Multi-tier Collection Sync, etc.",
-  "main": "./dist/fifoqueue.min.js",
+  "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/unit",
     "perf": "echo ' *** No performance tests found ***' ",
