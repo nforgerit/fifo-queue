@@ -1,4 +1,4 @@
-#FIFO-Queue
+# FIFO-Queue
 
 FIFO (First In First Out) Queues are one of the basic data structures in Software Engineering.
 They come in handy for many different use cases, e.g. Job Queuing where
